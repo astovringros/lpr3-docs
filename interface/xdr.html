@@ -39,7 +39,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href="../index.html" class="icon icon-home"> Landspatientregisteret 3 - Technical documentation</a>
+        <a href=".." class="icon icon-home"> Landspatientregisteret 3 - Technical documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -48,20 +48,12 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../definitions.html">Definitions</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../governance.html">Governace</a>
-                    </li>
-                </ul>
                 <p class="caption"><span class="caption-text">Documentation</span></p>
                 <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction to the material</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../definitions.html">Definitions</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="../aspects.html">Interface aspects and usage</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../submission-scheme.html">Submission scheme</a>
@@ -71,37 +63,56 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="xdr.html">XDR</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#clinical-document-architecture-lpr3-definition">Clinical Document Architecture LPR3 definition</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#http-status-codes">HTTP status codes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#100-continue">100 Continue</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#403-forbidden">403 Forbidden</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#404-not-found">404 Not Found</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#406-not-acceptable">406 Not Acceptable</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#413-payload-too-large">413 Payload Too Large</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#501-not-implemented">501 Not Implemented</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#503-service-unavailable">503 Service Unavailable</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ihe-xdr-wsdl-with-national-ssi-additions">IHE XDR WSDL with national SSI additions</a>
+    </li>
     </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="accumulated-error-list.html">Accumulated error list</a>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Environments</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../productionenvironment.html">Production environment</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../productionenvironment.html">Production</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../testenvironment.html">Test</a>
                     </li>
                 </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../testenvironment.html">Test environment</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../developmentresources.html">Development resources</a>
-                    </li>
-                </ul>
+                <p class="caption"><span class="caption-text">Examples</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../scenarios.html">Scenarios</a>
                     </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../examples.html">Samples</a>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Miscellaneous</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../developmentresources.html">Development resources</a>
                     </li>
-                </ul>
-                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../links.html">Related material and links</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../governance.html">Governace</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a>
                     </li>
                 </ul>
       </div>
@@ -113,7 +124,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../index.html">Landspatientregisteret 3 - Technical documentation</a>
+        <a href="..">Landspatientregisteret 3 - Technical documentation</a>
       </nav>
 
       
@@ -121,7 +132,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="../index.html">Docs</a> &raquo;</li>
+    <li><a href="..">Docs</a> &raquo;</li>
     
       
         
@@ -132,9 +143,6 @@
     <li>XDR</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/scandihealth/lpr3-docs/edit/master/src/interface/xdr.md"
-          class="icon icon-github"> Edit on GitHub</a>
-      
     </li>
   </ul>
   
@@ -144,9 +152,9 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="clinical-document-architecture-lpr3-definition">Clinical Document Architecture LPR3 definition</h1>
+                <h1 id="xdr-interface">XDR interface</h1>
+<h2 id="clinical-document-architecture-lpr3-definition">Clinical Document Architecture LPR3 definition</h2>
 <p>The specific design details of LPR3 based on Clinical Document Architecture (CDA) is documented at <a href="http://lpr-art-decor.westeurope.cloudapp.azure.com:8080/art-decor/decor-project--lpr-">ART-DECOR</a></p>
-<h1 id="xdr-interface">XDR interface</h1>
 <h2 id="http-status-codes">HTTP status codes</h2>
 <p>The XDR endpoints are build on SOAP 1.2 and as such any LPR XDR client should interpret HTTP status code as defined <a href="https://www.w3.org/TR/soap12-part2/">SOAP Version 1.2 Part 2: Adjuncts (Second Edition)</a> section 7.5.1.2</p>
 <blockquote>
@@ -390,10 +398,6 @@
 
   <div class="rst-versions" role="note" aria-label="versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
-    
-        <span>
-          <a href="https://github.com/scandihealth/lpr3-docs/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
-        </span>
     
     
       <span><a href="../submission-scheme.html" style="color: #fcfcfc">&laquo; Previous</a></span>

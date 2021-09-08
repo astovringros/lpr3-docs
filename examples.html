@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Examples - Landspatientregisteret 3 - Technical documentation</title>
+  <title>Samples - Landspatientregisteret 3 - Technical documentation</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="css/theme.css" />
@@ -20,7 +20,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Examples";
+    var mkdocs_page_name = "Samples";
     var mkdocs_page_input_path = "examples.md";
     var mkdocs_page_url = null;
   </script>
@@ -39,7 +39,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href="index.html" class="icon icon-home"> Landspatientregisteret 3 - Technical documentation</a>
+        <a href="." class="icon icon-home"> Landspatientregisteret 3 - Technical documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -48,20 +48,12 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="index.html">Home</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="definitions.html">Definitions</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="governance.html">Governace</a>
-                    </li>
-                </ul>
                 <p class="caption"><span class="caption-text">Documentation</span></p>
                 <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Introduction to the material</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="definitions.html">Definitions</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="aspects.html">Interface aspects and usage</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="submission-scheme.html">Submission scheme</a>
@@ -74,34 +66,49 @@
                     <li class="toctree-l1"><a class="reference internal" href="interface/accumulated-error-list.html">Accumulated error list</a>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Environments</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="productionenvironment.html">Production environment</a>
+                    <li class="toctree-l1"><a class="reference internal" href="productionenvironment.html">Production</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="testenvironment.html">Test</a>
                     </li>
                 </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="testenvironment.html">Test environment</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="developmentresources.html">Development resources</a>
-                    </li>
-                </ul>
-                <ul>
+                <p class="caption"><span class="caption-text">Examples</span></p>
+                <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="scenarios.html">Scenarios</a>
                     </li>
-                </ul>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="examples.html">Examples</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="examples.html">Samples</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#sample-request-using-mtomxop">Sample request using MTOM/XOP</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sample-response-with-an-invalid-document">Sample response with an invalid document</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sample-response-with-a-valid-document">Sample response with a valid document</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#example-usage-of-ids-and-uuidv4">Example usage of ID's and UUIDv4</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#updating-values-in-documents">Updating values in documents</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#adding-new-procedures-to-a-previous-submitted-document">Adding new procedures to a previous submitted document</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#sample-of-how-to-create-a-uuidv5">Sample of how to create a UUIDv5</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#examples-from-selected-scenarios">Examples from selected scenarios</a>
+    </li>
+        </ul>
+    </li>
     </ul>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Miscellaneous</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a>
+                    <li class="toctree-l1"><a class="reference internal" href="developmentresources.html">Development resources</a>
                     </li>
-                </ul>
-                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="links.html">Related material and links</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="governance.html">Governace</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a>
                     </li>
                 </ul>
       </div>
@@ -113,7 +120,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">Landspatientregisteret 3 - Technical documentation</a>
+        <a href=".">Landspatientregisteret 3 - Technical documentation</a>
       </nav>
 
       
@@ -121,15 +128,16 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
+    <li><a href=".">Docs</a> &raquo;</li>
     
       
+        
+          <li>Examples &raquo;</li>
+        
+      
     
-    <li>Examples</li>
+    <li>Samples</li>
     <li class="wy-breadcrumbs-aside">
-      
-        <a href="https://github.com/scandihealth/lpr3-docs/edit/master/src/examples.md"
-          class="icon icon-github"> Edit on GitHub</a>
       
     </li>
   </ul>
@@ -140,7 +148,8 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="sample-request-using-mtomxop">Sample request using MTOM/XOP</h2>
+                <h1 id="sambles">Sambles</h1>
+<h2 id="sample-request-using-mtomxop">Sample request using MTOM/XOP</h2>
 <pre><code class="language-http">POST /cda-ws/PatientHealthcareReportingService HTTP/1.1 
 Accept: application/soap+xml, multipart/related 
 Content-Type: multipart/related;start=&quot;&lt;rootpart*a80594a2-e5de-425d-9fdc-f6ba27d58f05@example.jaxws.sun.com&gt;&quot;;type=&quot;application/xop+xml&quot;;boundary=&quot;uuid:a80594a2-e5de-425d-9fdc-f6ba27d58f05&quot;;start-info=&quot;application/soap+xml;action=\&quot;urn:ihe:iti:2007:ProvideAndRegisterDocumentSet-b\&quot;&quot; 
@@ -1468,7 +1477,7 @@ echo 'EpisodeOfCareUUID: '$EPISODE_OF_CARE_UUID
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="faq.html" class="btn btn-neutral float-right" title="FAQ">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="developmentresources.html" class="btn btn-neutral float-right" title="Development resources">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="scenarios.html" class="btn btn-neutral" title="Scenarios"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -1496,15 +1505,11 @@ echo 'EpisodeOfCareUUID: '$EPISODE_OF_CARE_UUID
   <div class="rst-versions" role="note" aria-label="versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
-        <span>
-          <a href="https://github.com/scandihealth/lpr3-docs/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
-        </span>
-    
     
       <span><a href="scenarios.html" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="faq.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="developmentresources.html" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
