@@ -58,6 +58,30 @@
                     </li>
                     <li class="toctree-l1 current"><a class="reference internal current" href="submission-scheme.html">Submission scheme</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#creating-object">Creating object</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#updating-objects">Updating objects</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#deleting-objects">Deleting objects</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#special-cases">Special cases</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#update-main-condition">Update main condition</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#update-minor-condition">Update minor condition</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#update-main-condition-switch-to-minor">Update main condition switch to minor</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#update-minor-condition-switch-to-main">Update minor condition switch to main</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#no-existing-main-condition">No existing main condition</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#main-condition-exists">Main condition exists</a>
+    </li>
+        </ul>
+    </li>
     </ul>
                     </li>
                 </ul>
@@ -88,7 +112,7 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="links.html">Related material and links</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="governance.html">Governace</a>
+                    <li class="toctree-l1"><a class="reference internal" href="governance.html">Governance</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a>
                     </li>
@@ -130,11 +154,12 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="creating-object">Creating object</h1>
-<h1 id="updating-objects">Updating objects</h1>
-<h1 id="deleting-objects">Deleting objects</h1>
-<h1 id="special-cases">Special cases</h1>
-<h2 id="update-main-condition">Update main condition</h2>
+                <h1 id="submission-scheme">Submission scheme</h1>
+<h2 id="creating-object">Creating object</h2>
+<h2 id="updating-objects">Updating objects</h2>
+<h2 id="deleting-objects">Deleting objects</h2>
+<h2 id="special-cases">Special cases</h2>
+<h3 id="update-main-condition">Update main condition</h3>
 <p>Create an episode of care with an encounter and a main condition observation.</p>
 <pre><code class="language-xml">&lt;hl7:ClinicalDocument xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; 
     xmlns:hl7=&quot;urn:hl7-org:v3&quot; xsi:schemaLocation=&quot;urn:hl7-org:v3 https://raw.githubusercontent.com/cdaapi/cdaapi_core/master/reference/CDA.xsd&quot;&gt;
