@@ -187,8 +187,7 @@
 <p>All reported documents (initial state and corrections) must be versioned using ClinicalDocument.id, ClinicalDocument.setId and ClinicalDocument.versionNumber. Initial versionNumber MUST be '1'. Whenever the document is appended to or replaced (collectively known as <em>update</em>), the ClinicalDocument.versionNumber must be incremented and the ClinicalDocument.id must unique. ClinicalDocument.setId must remain the same across all versions.</p>
 <p>Note: <em>Replace</em> will replace all previous documents and addendums.</p>
 <p>This stated use of id, setId and versionNumber ensures that no updates to documents are appended in the wrong order - a refinement of what is stated in sections 4.2.1.7, 4.2.1.8 and 4.2.3.1 - <em>"Note that version number must be incremented by one when a report is replaced, but can also be incremented more often to meet local requirements."</em> - <a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=7">CDA R2</a>.</p>
-<p><img alt="" src="img/L-cda_figure1-changed.png" />
-<img alt="" src="img/" /></p>
+<p><img alt="" src="img/L-cda_figure1-changed.png" /></p>
 <h2 id="rules-for-updating-documents">Rules for updating documents</h2>
 <ul>
 <li>First submitted document constitutes the ‘base document set’.</li>
@@ -542,11 +541,11 @@ The XSD and Schematron files does not include LPR3 assigned error codes - instea
 <h2 id="mapping-to-the-logical-model">Mapping to the logical model</h2>
 <p>The following diagram illustrates the logical data model of LPR3:<br />
 <a href="img/LPR3.png"><img alt="LPR3 logical model" src="img/LPR3.png" /></a></p>
-<p>A physical ERM for the logical model can be seen <a href="/res/LPR3_ACTIVE.pdf">here</a></p>
+<p>A physical ERM for the logical model can be seen <a href="res/LPR3_ACTIVE.pdf">here</a></p>
 <p>This model is mapped to CDA and divided into the following sections:</p>
 <ul>
 <li>CDA Header
-This section contains the elements <code>Patient</code> and <code>Bopael</code> from LPR3. The use of elements in the header follows the national <a href="http://svn.medcom.dk/svn/releases/Standarder/HL7/CDA%20Header/Dokumentation/DK-CDA-Header-v1.1.pdf">"MedCom guidelines"</a> for CDA header usage.</li>
+This section contains the elements <code>Patient</code> and <code>Bopael</code> from LPR3. The use of elements in the header follows the national ["MedCom guidelines"]:http://svn.medcom.dk/svn/releases/Standarder/HL7/CDA%20Header/Dokumentation/DK-CDA-Header.pdf) for CDA header usage.</li>
 <li>Episode of Care
 This section contains the main elements <code>ForloebElement</code>, <code>ForloebReference</code> and <code>ForloebMarkoer</code> from LPR3 that maps to <code>DK Episode Of Care Act</code>, <code>DK Episode of Care Link Act</code> and <code>DK Episode of Care Marker Act</code> </li>
 <li>Encounters
