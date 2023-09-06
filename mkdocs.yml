@@ -1,5 +1,5 @@
 docs_dir: src
-site_name: Landspatientregisteret 3 - Technical documentation
+site_name: Landspatientregisteret 3 - Technical documentation - ARO
 nav:
 - Documentation:
   - Introduction to the material: index.md
